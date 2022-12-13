@@ -6,7 +6,6 @@ container.style.display = 'none';
 let card = document.getElementById('card');
 var attempt = 1;
 const start = new Audio('./start.mp3')
-console.log(number1);
 
 function playNow() {
   start.play();
