@@ -47,6 +47,7 @@ function check() {
 function playAgain() {
   const result = document.getElementById('result')
   result.innerText = '';
+  attempt = 1;
   const button1 = document.getElementById('button1')
   button1.style.display = "";
   button2.style.display = "none";
