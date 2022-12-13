@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+
+  <!-- Link of CSS File -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Link of Favicon Icon -->
+  <link rel="shortcut icon" href="./fav-batman.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="card" id="card">
+    <h2>GUESS THE NUMBER</h2>
+    <button onclick="playNow()">
+      <span>PLAY NOW</span>
+    </button>
+  </div>
+  <div id="container">
+    <h1>Guess The Number</h1>
+    <h4 id="description">In this Game ! You have to Guess a number between 0 to 50 in the least possible attempt</h4>
+    <input type="number" placeholder="Guess Number Here" min="0" max="50" autofocus maxlength="3" required id="number"
+      value='' onfocus="this.value = ''">
+    <button class="cssbuttons-io-button" onclick="check()" id="button1">
+      <span>Check</span>
+    </button>
+    <p id="result"></p>
+    <button class="cssbuttons-io-button" id="button2" onclick="playAgain()">
+      <span>PlaY Again</span>
+    </button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
